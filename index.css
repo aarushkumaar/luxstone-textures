@@ -150,6 +150,7 @@ body {
     z-index: 1;
     transition: transform var(--transition-hover), filter var(--transition-hover);
     transform-origin: center;
+    filter: blur(4px) brightness(0.8);
 }
 
 .landing-card-overlay {
@@ -186,6 +187,7 @@ body {
 /* Landing Cards Hover States */
 .landing-card:hover img {
     transform: scale(1.04);
+    filter: blur(0px) brightness(0.9);
 }
 .landing-card:hover .landing-card-overlay {
     background: rgba(26, 26, 26, 0.7);
