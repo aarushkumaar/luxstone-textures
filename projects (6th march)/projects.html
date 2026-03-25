@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | LuxStone Textures</title>
+    
+    <style>
+        /* Base Critical CSS - Overridden by projects.css */
+        :root {
+            --clr-bg: #fbfaf8;
+            --clr-text-main: #1a1a1a;
+            --clr-text-muted: #7a7a7a;
+            --clr-accent: #cba371;
+            --transition-smooth: 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+            --sp-md: 2rem;
+            --sp-lg: 4rem;
+            --sp-xl: 8rem;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--clr-bg); color: var(--clr-text-main); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .navbar-placeholder { padding: 1.5rem var(--sp-lg); background-color: rgba(251, 250, 248, 0.85); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(203, 163, 113, 0.15); position: sticky; top: 0; z-index: 100; }
+        .nav-content { max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-content .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: var(--clr-text-main); }
+        .nav-links a { text-decoration: none; color: var(--clr-text-muted); margin-left: 3rem; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; transition: color var(--transition-smooth); }
+        .projects-main { max-width: 1600px; margin: 0 auto; padding: 0 var(--sp-lg) var(--sp-xl); overflow: hidden; }
+        .page-header { text-align: center; margin-bottom: var(--sp-xl); padding: var(--sp-xl) 0 0; }
+        .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 7vw, 6rem); font-weight: 300; letter-spacing: -1px; margin-bottom: 1rem; text-transform: uppercase; }
+        .page-subtitle { font-family: 'Inter', sans-serif; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 3px; color: var(--clr-text-muted); max-width: 600px; margin: 0 auto; }
+    </style>
+
+    <link rel="stylesheet" href="projects.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="projects.css"></noscript>
+    
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR PLACEHOLDER -->
+    <nav class="navbar-placeholder">
+        <div class="nav-content">
+            <div class="logo">LUXSTONE</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#" class="active" style="color: var(--clr-accent);">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <header class="page-header">
+            <h1 class="page-title reveal-hidden">Projects</h1>
+            <p class="page-subtitle reveal-hidden" style="transition-delay: 0.2s;">A curated portfolio of our premium stone texture applications.</p>
+        </header>
+
+        <!-- Dynamic Content Container -->
+        <div id="projects-container">
+            <!-- Interior and Exterior sections will be injected here via JS -->
+        </div>
+
+    </main>
+
+    <!-- FOOTER PLACEHOLDER -->
+    <footer class="footer-placeholder">
+        <div class="footer-content">
+            <p>&copy; 2026 LuxStone Textures. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-image" id="lightbox-img" src="" alt="Enlarged Project Image">
+        </div>
+    </div>
+
+    <!-- JS dependencies -->
+    <script src="projects.js" defer></script>
+</body>
+</html>
