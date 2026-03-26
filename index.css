@@ -150,7 +150,7 @@ body {
     z-index: 1;
     transition: transform var(--transition-hover), filter var(--transition-hover);
     transform-origin: center;
-    filter: blur(4px) brightness(0.8);
+    filter: brightness(0.75);
 }
 
 .landing-card-overlay {
@@ -166,8 +166,9 @@ body {
     z-index: 3;
     font-family: var(--font-sans);
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
     letter-spacing: 6px;
     transition: transform var(--transition-hover), text-shadow var(--transition-hover);
@@ -187,14 +188,14 @@ body {
 /* Landing Cards Hover States */
 .landing-card:hover img {
     transform: scale(1.04);
-    filter: blur(0px) brightness(0.9);
+    filter: brightness(0.85);
 }
 .landing-card:hover .landing-card-overlay {
     background: rgba(26, 26, 26, 0.7);
 }
 .landing-card:hover .landing-card-label {
     transform: scale(1.05);
-    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
 }
 .landing-card:hover .landing-card-border {
     opacity: 1;
