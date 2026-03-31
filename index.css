@@ -344,8 +344,10 @@ body {
 .card-title {
     font-family: var(--font-serif);
     color: #fff;
-    font-size: 1.8rem; /* Dialed back */
-    font-weight: 300;
+    font-size: 1.25rem; /* Smaller, more elegant */
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     margin-bottom: 0.25rem;
     transform: translateY(10px);
     transition: transform var(--transition-hover), opacity var(--transition-hover);
@@ -375,6 +377,22 @@ body {
 .project-card:hover .card-category {
     opacity: 1;
     transform: translateY(0);
+}
+
+.card-border-accent {
+    position: absolute;
+    inset: 1rem;
+    border: 1px solid var(--clr-accent);
+    opacity: 0;
+    transform: scale(1.02);
+    transition: transform var(--transition-hover), opacity var(--transition-hover);
+    pointer-events: none;
+    z-index: 4;
+}
+
+.project-card:hover .card-border-accent {
+    opacity: 1;
+    transform: scale(1);
 }
 
 
@@ -496,5 +514,118 @@ body {
     .nav-content {
         justify-content: center;
     }
+}
+
+/* ========================================= */
+/* PROJECT GROUP HEADINGS & DIVIDERS         */
+/* ========================================= */
+
+.project-group {
+    margin-bottom: var(--sp-xl);
+}
+
+/* Elegant caption-style heading above each project's image group */
+.project-group-title {
+    font-family: var(--font-serif);
+    font-size: 0.78rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    color: var(--clr-text-muted);
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+/* Thin gold-tinted divider between project groups within a subsection */
+.project-divider {
+    height: 1px;
+    background: rgba(203, 163, 113, 0.22);
+    margin-bottom: var(--sp-lg);
+    margin-top: calc(var(--sp-xl) * -0.5);
+}
+
+/* ========================================= */
+/* SKELETON LOADING PLACEHOLDER              */
+/* ========================================= */
+
+@keyframes skeleton-pulse {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.project-card.skeleton {
+    background: linear-gradient(
+        90deg,
+        #ece9e3 25%,
+        #f5f2ee 50%,
+        #ece9e3 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-pulse 1.8s ease-in-out infinite;
+}
+
+/* Hide the img itself while skeleton is showing so we don't get a broken icon */
+.project-card.skeleton img {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:not(.skeleton) img {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/* ========================================= */
+/* YOUTUBE CARD                              */
+/* ========================================= */
+
+/* YouTube card shares all .project-card styles; override cursor for link intent */
+.youtube-card {
+    cursor: pointer;
+    user-select: none;
+}
+
+.youtube-card:hover img {
+    transform: scale(1.04);
+    filter: brightness(0.85);
+}
+
+/* Centered play icon overlay — non-interactive so card click still fires */
+.play-icon-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: transform var(--transition-hover);
+    z-index: 2;
+}
+
+.play-icon-overlay svg {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    transition: transform var(--transition-hover);
+}
+
+.youtube-card:hover .play-icon-overlay svg {
+    transform: scale(1.1);
+}
+
+/* Small "Watch on YouTube" badge at the bottom of the card */
+.yt-badge {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.85);
+    z-index: 3;
+    pointer-events: none;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
