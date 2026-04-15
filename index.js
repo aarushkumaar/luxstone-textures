@@ -18,21 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // DATA — Interior
     // -------------------------------------------------------------------------
     const interiorData = [
-        {
-            title: 'Residential',
-            projects: [
-                {
-                    name: 'Sector 65, Gurugram',
-                    youtube: '',  // ← paste YouTube link here
-                    images: [
-                        'ASSETS/Interior/residential/sec_65-13.jpg',
-                        'ASSETS/Interior/residential/sec_65-15.jpg',
-                        'ASSETS/Interior/residential/sec_65-20.jpg'
-                    ]
-                }
-            ]
-        },
-        {
+         {
             title: 'Commercial',
             projects: [
                 {
@@ -60,6 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         'ASSETS/Interior/commercial/Soni Sapphire, Rajouri Garden/Soni_Saph-1.jpg',
                         'ASSETS/Interior/commercial/Soni Sapphire, Rajouri Garden/Soni_Saph-34.jpg',
                         'ASSETS/Interior/commercial/Soni Sapphire, Rajouri Garden/Soni_Saph-81.jpg'
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'Residential',
+            projects: [
+                {
+                    name: 'Sector 65, Gurugram',
+                    youtube: '',  // ← paste YouTube link here
+                    images: [
+                        'ASSETS/Interior/residential/sec_65-13.jpg',
+                        'ASSETS/Interior/residential/sec_65-15.jpg',
+                        'ASSETS/Interior/residential/sec_65-20.jpg'
                     ]
                 }
             ]
