@@ -85,29 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------------------
     const exteriorData = [
         {
-            title: 'Residential',
-            projects: [
-                {
-                    name: 'Residential Projects',
-                    youtube: '',  // ← paste YouTube link here
-                    images: [
-                        'ASSETS/exterior/residential/DSC07597 (1).jpg',
-                        'ASSETS/exterior/residential/DSC07677.jpg',
-                        'ASSETS/exterior/residential/DSC07703.jpg',
-                        'ASSETS/exterior/residential/sec_10-1 (2).jpg',
-                        'ASSETS/exterior/residential/sec_10-15.jpg',
-                        'ASSETS/exterior/residential/sec_10-2.jpg',
-                        'ASSETS/exterior/residential/sec_2_Site_1-3.jpg',
-                        'ASSETS/exterior/residential/sec_2_Site_1-7.jpg',
-                        'ASSETS/exterior/residential/sec_2_Site_1-8.jpg',
-                        'ASSETS/exterior/residential/sec_2_Site_2-12.jpg',
-                        'ASSETS/exterior/residential/sec_2_Site_2-3.jpg',
-                        'ASSETS/exterior/residential/sec_2_Site_2-6.jpg'
-                    ]
-                }
-            ]
-        },
-        {
             title: 'Commercial',
             projects: [
                 {
@@ -145,6 +122,29 @@ document.addEventListener('DOMContentLoaded', () => {
                         'ASSETS/exterior/offices/Property Master, Faridabad/PROPERTY_MASTER-2.jpg',
                         'ASSETS/exterior/offices/Property Master, Faridabad/PROPERTY_MASTER-65.jpg',
                         'ASSETS/exterior/offices/Property Master, Faridabad/PROPERTY_MASTER-76.jpg'
+                    ]
+                }
+            ]
+        },
+        {
+            title: 'Residential',
+            projects: [
+                {
+                    name: 'Residential Projects',
+                    youtube: '',  // ← paste YouTube link here
+                    images: [
+                        'ASSETS/exterior/residential/DSC07597 (1).jpg',
+                        'ASSETS/exterior/residential/DSC07677.jpg',
+                        'ASSETS/exterior/residential/DSC07703.jpg',
+                        'ASSETS/exterior/residential/sec_10-1 (2).jpg',
+                        'ASSETS/exterior/residential/sec_10-15.jpg',
+                        'ASSETS/exterior/residential/sec_10-2.jpg',
+                        'ASSETS/exterior/residential/sec_2_Site_1-3.jpg',
+                        'ASSETS/exterior/residential/sec_2_Site_1-7.jpg',
+                        'ASSETS/exterior/residential/sec_2_Site_1-8.jpg',
+                        'ASSETS/exterior/residential/sec_2_Site_2-12.jpg',
+                        'ASSETS/exterior/residential/sec_2_Site_2-3.jpg',
+                        'ASSETS/exterior/residential/sec_2_Site_2-6.jpg'
                     ]
                 }
             ]
